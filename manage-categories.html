@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multipage Blog website</title>
+
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <script src="https://kit.fontawesome.com/ca588fd95f.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./Assets/Css/Style.css">
+
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo">NASHON</a>
+            <ul class="nav-items">
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+                <!-- <li><a href="signin.html">Sign In</a></li> -->
+                <li class="nav-profile">
+                    <div class="avatar">
+                        <img src="./images/avatar1.jpg" alt="">
+                    </div>
+                    <ul>
+                        <li><a href="Dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Log Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button title="btn" id="open-nav-btn"><i class="fas fa-bars"></i></button>
+            <button title="btn" id="close-nav-btn"><i class="fas fa-times"></i></button>
+        </div>
+    </nav>
+    <!-- ============================END OF NAV============================ -->
+ 
+ 
+ 
+    <section class="dashboard">
+        <div class="container dashboard-container">
+            <button id="show-sidebar-btn" class="sidebar-toggle"><i class="fa fa-angle-right"></i></button>
+            <button id="hide-sidebar-btn" class="sidebar-toggle"><i class="fa fa-angle-left"></i></button>
+            <aside>
+                <ul>
+                    <li>
+                        <a href="add-post.html"><i class="fa fa-pencil"></i>
+                            <h5>Add Post</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Dashboard.html"><i class="fa fa-address-card"></i>
+                            <h5>Manage Posts</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add-user.html"><i class="fa fa-user-plus"></i>
+                            <h5>Add user</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-users.html"><i class="fa fa-users"></i>
+                            <h5>Manage Users</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="add-category.html"><i class="fa fa-edit "></i>
+                            <h5>Add Category</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="manage-categories.html" class="active"><i class="fa fa-list-ul"></i>
+                            <h5>Manage Categories</h5>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <main>
+                <h2>Manage Categories</h2>
+                <table>
+                    <thead>
+                        <th>Title</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Travel</td>
+                            <td><a href="./edit-category.html" class="btn sm">Edit</a></td>
+                            <td><a href="./delete-category.html" class="btn sm danger">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Wildlife</td>
+                            <td><a href="./edit-category.html" class="btn sm">Edit</a></td>
+                            <td><a href="./delete-category.html" class="btn sm danger">Delete</a></td>
+                        </tr>
+                        <tr>
+                            <td>Music</td>
+                            <td><a href="./edit-category.html" class="btn sm">Edit</a></td>
+                            <td><a href="./delete-category.html" class="btn sm danger">Delete</a></td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </main>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-socials">
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="container footer-container">
+            <article>
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="">Art</a></li>
+                    <li><a href="">Wildlife</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="">Travel</a></li>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Science and Technology</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="">Online support</a></li>
+                    <li><a href="">Call numbers</a></li>
+                    <li><a href="">Emalis</a></li>
+                    <li><a href="">Social support</a></li>
+                    <li><a href="">loaction</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Blog</h4>
+                <ul>
+                    <li><a href="">Safety</a></li>
+                    <li><a href="">Repair</a></li>
+                    <li><a href="">Recent</a></li>
+                    <li><a href="">popular</a></li>
+                    <li><a href="">Categories</a></li>
+                </ul>
+            </article>
+            <article>
+                <h4>Permalinks</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contacts.html">Contact</a></li>
+                </ul>
+            </article>
+        </div>
+        <div class="footer-copyright">
+            <small>Copyright &copy; 2022 Nashon Ernest</small>
+        </div>
+    </footer>
+
+<script src="./Assets/JavaScript/Script.js"></script>
+</body>
+</html>
